@@ -29,7 +29,7 @@
     height: 100%;
     transition: 2s ease;
 }
-}
+
 .overlay{
     position: relative;
     filter: grayscale(100%);
