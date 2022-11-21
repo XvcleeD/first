@@ -2,21 +2,27 @@
     box-sizing: border-box;
 }
 .container{
-    width: 1230px;
-    display: block;
-}
-.block{
-    
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.responsive{ 
-    width: ;
-    height: auto;
-}
-.img-width{
-    width: 33.3%;
+    width: 550px;
+    background-color: black;
 }
 
+.row{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.img-width{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.img-width:hover{
+    filter: grayscale(0%);
+}
+filter:hover{
+    width: 100px;
+    height: 100px;
+    transition: width 1s height 1s;
+}
