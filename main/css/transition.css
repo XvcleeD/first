@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1230px;
+    display: block;
+}
+.block{
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.responsive{ 
+    width: ;
+    height: auto;
+}
+.img-width{
+    width: 33.3%;
+}
+
