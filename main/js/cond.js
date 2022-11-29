@@ -60,10 +60,10 @@
 // alert (chanar)
 
 
-let year = prompt('on oo uruuln uu ? ')
-let message = ( year % 4 || (year % 400) == 0 && (year % 100) == 0) == 0 ? 'ondor jil' : 'ondor jil bish'
-alert(message)
-console.log(message)
+// let year = prompt('on oo uruuln uu ? ')
+// let message = ( year % 4 || (year % 400) == 0 && (year % 100) == 0) == 0 ? 'ondor jil' : 'ondor jil bish'
+// alert(message)
+// console.log(message)
 
 // let year = prompt('on oo uruuln uu ? ')
 
