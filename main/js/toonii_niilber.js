@@ -1,8 +1,8 @@
-let too = prompt('toogoo uruulnuu')
+// let too = prompt('toogoo uruulnuu')
 
-for(let i = 1; i++;  i <= too ){
-    let niilber = 
-    console.log(niilber)
-    // console.log(i) 
+// for(let i = 1;  <= too; i++ i ){
+//     let niilber = 
+//     console.log(niilber)
+//     // console.log(i) 
     
-}
+// }
