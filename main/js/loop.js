@@ -32,16 +32,18 @@
 
 // }
 
-let massage = 'pin block'
-const pin = 'sesame'
-for(let i = 5; i > 0 ; i--){
-    const answer = prompt('enter your pin')
-    if(pin == answer){
-        massage = 'amjilttai nebterlee'
-        break
-    }
-}
-alert(massage)
+// let massage = 'pin block'
+// const pin = 'sesame'
+// for(let i = 5; i > 0 ; i--){
+//     const answer = prompt('enter your pin')
+//     if(pin == answer){
+//         massage = 'amjilttai nebterlee'
+//         break
+//     }
+// }
+// alert(massage)
+
+
 
 
 
