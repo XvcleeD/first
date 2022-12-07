@@ -164,22 +164,22 @@
 
 // Array sorter function 
 
-// let max = -1000;
-// const arr = [4, 32, 2, 5, 8, -10, 20, 1, 0, -20]
+let max = -1000;
+const arr = [4, 32, 2, 5, 8, -10, 20, 1, 0, -20]
 
-// arr.sort(function(a, b){
-//     return a - b 
-// })
-// let arrayMax = (array) => {
-//     for ( let i  = 0; i < array.length; i++){
-//         if (max <= array[i]){
-//             max = array[i];
-//         }
-//     }
-// }
-// arrayMax(arr)
-// console.log(arr)
-// console.log(max);
+arr.sort(function(a, b){
+    return a - b 
+})
+let arrayMax = (array) => {
+    for ( let i  = 0; i < array.length; i++){
+        if (max <= array[i]){
+            max = array[i];
+        }
+    }
+}
+arrayMax(arr)
+console.log(arr)
+console.log(max);
 
 
 // simple array-1 
@@ -220,7 +220,30 @@ for(let i = 0; i < itCompanies.length; i++){
     console.log(itCompanies[i].toUpperCase())
 
 }
+// 6. 
 
+
+// for (let index = 0; index < itCompanies.length; index++) {
+//     const element = itCompanies[index];
+    
+    console.log(itCompanies + ' зэрэг мэдээллийн технологийн томоохон компаниуд.')
+    console.log('\n')
+// }
+
+
+// simple array2 
+
+// 1. 
+
+
+for(let i = 0; i < 3; i++){
+    console.log(itCompanies[i])
+    // console.log(itCompanies)
+    
+}
+console.log('\n')
+
+// 2. 
 
 
 

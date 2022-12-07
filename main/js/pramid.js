@@ -56,7 +56,9 @@
 //     n = (n * 10) + lastDigit;
 //     too = Math.floor(too / 10);
 // }
+// console.log(n)
 // if( copy == n ){
+    
 //     console.log('ene ni palindrome too mon')
 // }else{
 //     console.log('ene ni palindrome too bish')
@@ -78,27 +80,27 @@
 
 // console.log(randomNumber + "=" +too)
 
-let n = prompt('togoo oruulnuu')
-let urjber
-let i = 1
+// let n = prompt('togoo oruulnuu')
+// let urjber
+// let i = 1
 
 
-// for ( i = 1 ; i <= n ; i++ ){
-//     i = i * i * i * i * i
-//     console.log(urjber)
-//     console.log(i)
-    do{
-        i ++
-        let j = i
+// // for ( i = 1 ; i <= n ; i++ ){
+// //     i = i * i * i * i * i
+// //     console.log(urjber)
+// //     console.log(i)
+//     do{
+//         i ++
+//         let j = i
         
-        urjber = i *  1
-        urjber = urjber * j 
-        console.log(j)
-        console.log(urjber)
-    }
-    while ( i <= n ) 
+//         urjber = i *  1
+//         urjber = urjber * j 
+//         console.log(j)
+//         console.log(urjber)
+//     }
+//     while ( i <= n ) 
     
-    console.log(urjber)
+//     console.log(urjber)
     
 
 
