@@ -81,8 +81,9 @@
 // console.log(randomNumber + "=" +too)
 
 // let n = prompt('togoo oruulnuu')
-// let urjber
-// let i = 1
+// let urjber = 1 
+// let i = 0
+
 
 
 // // for ( i = 1 ; i <= n ; i++ ){
@@ -90,15 +91,11 @@
 // //     console.log(urjber)
 // //     console.log(i)
 //     do{
-//         i ++
-//         let j = i
-        
-//         urjber = i *  1
-//         urjber = urjber * j 
-//         console.log(j)
-//         console.log(urjber)
+//         i++
+//         urjber = urjber * i
+    
 //     }
-//     while ( i <= n ) 
+//     while ( i < n ) 
     
 //     console.log(urjber)
     
