@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="color_1" class="random"></div>
+    <div id="color_2" class="random"></div>
+    <div id="color_3" class="random"></div>
+    <div id="color_4" class="random"></div>
+    <div id="color_5" `class="random"></div>
+    <div id="color_6" class="random"></div>
+
+    <div id="fi"></div>
+    <script>
+        let color1 = document.getElementById('color_1')
+        let color2 = document.getElementById('color_2')
+        let color3 = document.getElementById('color_3')
+        let color4 = document.getElementById('color_4')
+        let color5 = document.getElementById('color_5')
+        let color6 = document.getElementById('color_6')
+
+        // color1.style.width = '100px'
+        // color1.style.height = '100px'
+        // color1.style.backgroundColor = 'red'
+        
+        color1.style.cssText = 'width : 100px; height : 100px; background-color:  #641E16'
+        color2.style.cssText = 'width : 100px; height : 100px; background-color: #512E5F'
+        color3.style.cssText = 'width : 100px; height : 100px; background-color: #0E6251'
+        color4.style.cssText = 'width : 100px; height : 100px; background-color: #7D6608'
+        color5.style.cssText = 'width : 100px; height : 100px; background-color: #7B7D7D'
+        color6.style.cssText = 'width : 100px; height : 100px; background-color: #17202A'
+
+        let  myButton = document.getElementById('button')
+
+        function changeBackgroundColor(){
+            let letters = '0123456789ABCDEF';
+            let color = '#'
+            for (let i = 0; i < 6; i++){
+                color += letters[Math.floor(Math.random()*16)];
+
+            }
+            return color;
+        }
+        
+        myButton.addEventListener('click', ()=> { document.body.style.backgroundColor =  changeBackgroundColor()} )
+
+
+        
+    </script>
+</body>
+</html>
