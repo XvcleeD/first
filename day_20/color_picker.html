@@ -7,49 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="color_1" class="random"></div>
-    <div id="color_2" class="random"></div>
-    <div id="color_3" class="random"></div>
-    <div id="color_4" class="random"></div>
-    <div id="color_5" `class="random"></div>
-    <div id="color_6" class="random"></div>
-
-    <div id="fi"></div>
-    <script>
-        let color1 = document.getElementById('color_1')
-        let color2 = document.getElementById('color_2')
-        let color3 = document.getElementById('color_3')
-        let color4 = document.getElementById('color_4')
-        let color5 = document.getElementById('color_5')
-        let color6 = document.getElementById('color_6')
-
-        // color1.style.width = '100px'
-        // color1.style.height = '100px'
-        // color1.style.backgroundColor = 'red'
-        
-        color1.style.cssText = 'width : 100px; height : 100px; background-color:  #641E16'
-        color2.style.cssText = 'width : 100px; height : 100px; background-color: #512E5F'
-        color3.style.cssText = 'width : 100px; height : 100px; background-color: #0E6251'
-        color4.style.cssText = 'width : 100px; height : 100px; background-color: #7D6608'
-        color5.style.cssText = 'width : 100px; height : 100px; background-color: #7B7D7D'
-        color6.style.cssText = 'width : 100px; height : 100px; background-color: #17202A'
-
-        let  myButton = document.getElementById('button')
-
-        function changeBackgroundColor(){
-            let letters = '0123456789ABCDEF';
-            let color = '#'
-            for (let i = 0; i < 6; i++){
-                color += letters[Math.floor(Math.random()*16)];
-
-            }
-            return color;
-        }
-        
-        myButton.addEventListener('click', ()=> { document.body.style.backgroundColor =  changeBackgroundColor()} )
-
-
-        
-    </script>
+        <button type="button" onclick="colorMatch1()" id="color_1" class="random"></button>
+        <button type="button" onclick="colorMatch2()" id="color_2"></button>
+        <button type="button" onclick="colorMatch3()" id="color_3"></button>
+        <button type="button" onclick="colorMatch4()" id="color_4"></button>
+        <button type="button" onclick="colorMatch5()" id="color_5"></button>
+        <button type="button" onclick="colorMatch6()" id="color_6"></button>
+    
+        <div id="fi"></div>
+        <script>
+            
+            let color1 = document.getElementById('color_1')
+            let color2 = document.getElementById('color_2')
+            let color3 = document.getElementById('color_3')
+            let color4 = document.getElementById('color_4')
+            let color5 = document.getElementById('color_5')
+            let color6 = document.getElementById('color_6')
+            let fi = document.getElementById('fi')
+    
+            // color1.style.width = '100px'
+            // color1.style.height = '100px'
+            // color1.style.backgroundColor = 'red'
+            
+            color1.style.cssText = 'width : 100px; height : 100px; background-color: #641E16'
+            color2.style.cssText = 'width : 100px; height : 100px; background-color: #512E5F'
+            color3.style.cssText = 'width : 100px; height : 100px; background-color: #0E6251'
+            color4.style.cssText = 'width : 100px; height : 100px; background-color: #7D6608'
+            color5.style.cssText = 'width : 100px; height : 100px; background-color: #7B7D7D'
+            color6.style.cssText = 'width : 100px; height : 100px; background-color: #17202A'
+            fi.style.cssText = 'width : 300px; height : 300px;'
+            let colorMatch1 = () => { fi.style.backgroundColor =  '#641E16'} 
+            let colorMatch2 = () => { fi.style.backgroundColor =  '#512E5F'} 
+            let colorMatch3 = () => { fi.style.backgroundColor =  '#0E6251'} 
+            let colorMatch4 = () => { fi.style.backgroundColor =  '#7D6608'} 
+            let colorMatch5 = () => { fi.style.backgroundColor =  '#7B7D7D'} 
+            let colorMatch6 = () => { fi.style.backgroundColor =  '#17202A'} 
+        </script>
 </body>
 </html>

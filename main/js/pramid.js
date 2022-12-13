@@ -68,17 +68,17 @@
 
 
 
-// let too = prompt(' toogoo oruulnuu 1-100')
+let too = prompt(' toogoo oruulnuu 1-100')
 
-// let randomNumber
+let randomNumber
 
-// do{
-//     randomNumber = Math.floor(Math.random()*100)
-//     console.log(randomNumber)
-// }
-// while (Number(too) != randomNumber) 
+do{
+    randomNumber = Math.floor(Math.random()*100)
+    console.log(randomNumber)
+}
+while (Number(too) != randomNumber) 
 
-// console.log(randomNumber + "=" +too)
+console.log(randomNumber + "=" +too)
 
 // let n = prompt('togoo oruulnuu')
 // let urjber = 1 
