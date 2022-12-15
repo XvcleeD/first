@@ -13,7 +13,7 @@
             <h1 class="text-primary">Todo List App</h1>
             <div>
                 <span class="text-muted">Он сар өдөр: 2022-12-13</span>
-                <span class="text-muted">task үлдлээ!</span>
+                <span id="" class="text-muted">task үлдлээ!</span>
             </div>
             <div class="input-group width ">
                 <input type="text" placeholder="Таскын нэрээ оруулн уу." class="bg-warning bg-opacity-10 form-control border border-top-0 border-d-0  border-start-0 border-warning " >
@@ -21,22 +21,21 @@
                 
             </div>
         </div>
-        <div
-        class="d-flex flex-column align-items-center ">
+        <div class="d-flex flex-column align-items-center ">
             <h1 class="text-primary">Жагсаалт</h1>
-            <div class="card flex-row justify-content-between align-items-center p-4 w-75"  >
-                <p class="card-text mb-0 fs-3">work 1</p>
-                <div class="d-flex gap-3">
-                    <button class="w-100">
+            <div id="task" class="card flex-row justify-content-between align-items-center p-4 w-75 bg-light"  >
+                <p id="taskText" class="card-text mb-0 fs-3">work 1</p>
+                <div id="taskButton" class="d-flex gap-1">
+                    <button id="editButton" onclick="" type="button" class="w-100 btn ">
                         <img src="./img/pen-svgrepo-com (1).svg" alt="">
                     </button>
-                    <button class="w-100">
-                        <img src="./img/save-svgrepo-com.svg" alt="">
+                    <button id="checkButton" onclick="" type="button" class="w-100 btn" >
+                        <img src="./img/check-svgrepo-com.svg" alt="" style="width: 25px;">
                     </button>
-                    <button class="w-100">
+                    <button id="trashButton" onclick="" type="button" class="w-100 btn">
                         <img src="./img/trash-svgrepo-com (1).svg" alt="">
                     </button>
-                    <span style="width: 70px;"></span>
+                    <span style="width: 50px;"></span>
                 </div>
             </div>
         </div>
