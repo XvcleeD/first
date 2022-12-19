@@ -15,7 +15,9 @@ function startTime(){
     else{
         timeDiol.innerHTML = diol
     }
-
+function time() {
+    
+}
 
 
 }
