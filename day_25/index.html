@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="colorSwitch()" ondblclick="colorSwitch2()">textuudiin ariin ongo arilgah</button>
+    <p id="redBgText">tobchin deer 1 udaa darhaar textiin ariin ongo baihgui bolnoo</p>
+    <p id="grayBgText">tobchin deer dabhar darhad textiin ariin ongo arilna</pid>
+    <script>
+        let magicBtnEl = document.getElementById('btn')
+        let redBgTextEl = document.getElementById('redBgText') 
+        let grayBgtextEl = document.getElementById('grayBgText')
+
+        redBgTextEl.style.backgroundColor = 'red'
+        grayBgtextEl.style.backgroundColor = 'gray'
+
+        let colorSwitch = () => {redBgTextEl.style.backgroundColor = "white"}
+        let colorSwitch2 = () => {grayBgtextEl.style.backgroundColor = "white"}
+    </script>
+</body>
+</html>

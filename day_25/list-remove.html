@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select id="colorSelect">
+            <option>Red</option>
+            <option>Gereen</option>
+            <option>White</option>
+            <option>Black</option>
+        </select>
+        <input id="btn" type="button" onclick="selectRemove" value="Select and Remove">
+    </form>
+    <script>
+        let selectEl = document.getElementById('colorSelect')
+        let btn = document.getElementById('btn')
+        alert ('No. of items:' + selectEl.length + '\n' + selectEl.innerText)
+        btn.addEventListener('click', () => {
+            selectEl.remove(selectEl.selectedIndex)
+            alert('No. of items:' + selectEl.length + '\n' + selectEl.innerText)
+        })
+    </script>
+</body>
+</html>

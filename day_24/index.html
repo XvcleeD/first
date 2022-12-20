@@ -9,7 +9,45 @@
 <body>
     <span id="min">00</span><span id="sec">00</span><span id="diol">00</span>
     <button id="start">start</button><button id="stop">stop</button><button id="reset">reset</button>
-    <script src="./main.js"></script>
+    <script>
+let min = 0 
+let sec = 0 
+let diol = 0
+
+let timeDiol =document.getElementById("diol")
+let timeSec = document.getElementById("sec")
+let timeMin = document.getElementById("min")
+let starButton = document.getElementById('start')
+
+function startTime(){
+    
+    diol++
+    if(diol > 9){
+        timeDiol.innerHTML = diol
+    }
+    else{
+        timeDiol.innerHTML = "0" + diol
+    }
+    if(diol >= 99){
+        sec++
+        timeSec.innerHTML = sec
+        diol = 0
+    }else{
+        timeSec.innerHTML = "0" + sec
+        
+    }
+    if(sec >= 59){
+
+    }
+// function time() {
+    
+// }
+
+
+}
+
+starButton.addEventListener('click',()=> { setInterval(startTime , 10) } )
+    </script>
 
 </body>
 </html>
