@@ -5,48 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .timer{
+            color: aliceblue;
+            width: 200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .btns{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 25px;
+            gap: 20px;
+        }
+        .btn{
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <span id="min">00</span><span id="sec">00</span><span id="diol">00</span>
-    <button id="start">start</button><button id="stop">stop</button><button id="reset">reset</button>
+    <div class="timer">
+        <span id="min">00</span><span id="sec">00</span><span id="diol">00</span>
+    </div>
+    <div class="btns">
+        <button id="start" class="btn">start</button><button id="stop" class="btn">stop</button><button id="reset" class="btn">reset</button>
+    </div>
     <script>
-let min = 0 
-let sec = 0 
-let diol = 0
+let [min, sec , diol] = [0 , 0 , 0]
 
 let timeDiol =document.getElementById("diol")
 let timeSec = document.getElementById("sec")
 let timeMin = document.getElementById("min")
 let starButton = document.getElementById('start')
+let stopButton = document.getElementById('stop')
+let stopReset = document.getElementById('reset')
+
 
 function startTime(){
     
     diol++
-    if(diol > 9){
-        timeDiol.innerHTML = diol
+    if(diol < 10){
+        timeDiol.innerHTML = "0" + diol
     }
     else{
-        timeDiol.innerHTML = "0" + diol
+        timeDiol.innerHTML = diol 
     }
     if(diol >= 99){
         sec++
-        timeSec.innerHTML = sec
+        timeSec.innerHTML = sec + ":"
         diol = 0
-    }else{
-        timeSec.innerHTML = "0" + sec
-        
+    }
+    if (sec < 10){
+        timeSec.innerHTML = "0" + sec + ":"
     }
     if(sec >= 59){
-
+        min++
+        timeMin.innerHTML = min + ":"
+        sec = 0 
     }
-// function time() {
-    
-// }
-
-
+    if(min < 10){
+        timeMin.innerHTML = "0" + min + ":"
+    }
 }
-
-starButton.addEventListener('click',()=> { setInterval(startTime , 10) } )
+timeMin.innerHTML = timeMin.innerHTML + ":"
+timeSec.innerHTML = timeSec.innerHTML + ":"
+stopButton.addEventListener('click',()=> {} )
+stopReset.addEventListener('click',()=> {} )
+starButton.addEventListener('click',()=> { setInterval(startTime , ) } )
     </script>
 
 </body>
