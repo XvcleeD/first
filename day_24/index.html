@@ -74,10 +74,15 @@ function startTime(){
 }
 timeMin.innerHTML = timeMin.innerHTML + ":"
 timeSec.innerHTML = timeSec.innerHTML + ":"
-stopButton.addEventListener('click',()=> {} )
-stopReset.addEventListener('click',()=> {} )
-starButton.addEventListener('click',()=> { setInterval(startTime , ) } )
-    </script>
+stopButton.addEventListener('click',()=> {clearInterval(interval)} )
+stopReset.addEventListener('click',()=> {clearInterval(interval)
+    [min, sec , diol] = [0 , 0 , 0]
+    min = 0 
+    sec = 0
+    diol = 0
+} )
+starButton.addEventListener('click',()=> { interval = setInterval(startTime , 10) } )
+</script>
 
 </body>
 </html>
