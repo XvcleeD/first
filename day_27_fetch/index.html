@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <ol id="todos"></ol>
+    <script>
+        const todoEl = document.getElementById('todos')
+
+        fetch('https://jsonplaceholder.typicode.com/photos')
+        .then((res) =>{
+            if (res.ok){
+                return res.json();
+            }
+        })
+        .then((todos) => {
+            for (let i = 0; i< todos.length; i++){
+                const singleTodo = document.createElement('li')
+                const link = document.getElement
+                singleTodo.innerHTML = `<img src="${todos[i].thumbnailUrl}"/>` ;
+                todoEl.append(singleTodo)
+            }
+            console.log(todos)
+        }) 
+    </script>
+</body>
+</html>
