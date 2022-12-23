@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const newDiv = document.createElement("h1");
+        // const newContent = document.createTextNode("Манай сайтад тавтай морил");
+        // newDiv.appendChild(newContent);
+        // const main = document.getElementsByTagName("main");
+        // main[0].append(newDiv);
+        // console.log(newContent)
+
+        const divEL = document.createElement('div');
+
+        divEL.innerHTML = `<ol><li>HTML</li></ol>`;
+        document.body.prepend(divEL)
+    </script>
+</body>
+</html>

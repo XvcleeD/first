@@ -21,7 +21,7 @@
         .then((todos) => {
             for (let i = 0; i< todos.length; i++){
                 const singleTodo = document.createElement('li')
-                const link = document.getElement
+                // const link = document.getElement
                 singleTodo.innerHTML = `<img src="${todos[i].thumbnailUrl}"/>` ;
                 todoEl.append(singleTodo)
             }
