@@ -11,26 +11,37 @@
             border-radius: 50%;
         }
         body{
+        }
+        .card_img{
+            position: absolute;
+        }
+        .card_title{
+            position: relative;
             background-color: cornflowerblue;
+            
+        }
+        .card_about{
+            background-color: whitesmoke;
+            
         }
     </style>
 </head>
 <body>
 <div id="profileCard" class="profile">
-    <div id="img" class="">
+    <div id="img" class="card_img">
         <!-- booronhii zurag bainaa  -->
     </div>
-    <div id="user_title">
+    <div id="user_title" class="card_title">
         <!-- odbog ner huis nas  -->
     </div>
-    <div id="user_about">
+    <div id="user_about" class="card_about">
         <!-- phone email country  -->
     </div>
 </div>
     <script>
         const cardEL = document.getElementById('img')
         const userTitleEl = document.getElementById('user_title')
-
+        const userAboutEl = document.getElementById('user_about')
 
         fetch('https://randomuser.me/api')
         .then((res1) =>{
@@ -46,30 +57,30 @@
 
             const firstName = document.createElement('p')
             firstName.innerHTML =  data.results[0].name.first
-            cardEL.append(firstName)
+            userTitleEl.append(firstName)
 
             const lastName = document.createElement('p')
             lastName.innerHTML = data.results[0].name.last
-            cardEL.append(lastName)
+            userTitleEl.append(lastName)
             
             const ganderEl = document.createElement('p')
             ganderEl.innerHTML = `gender:${data.results[0].gender}`
-            cardEL.append(ganderEl)
+            userTitleEl.append(ganderEl)
 
             const dateAge = document.createElement('p')
             dateAge.innerHTML = data.results[0].registered.age
-            cardEL.append(dateAge)
+            userTitleEl.append(dateAge)
             const emailEl = document.createElement('p')
             emailEl.innerHTML = data.results[0].email
-            cardEL.append(emailEl)
+            userAboutEl.append(emailEl)
 
             const phoneEl = document.createElement('p')
             phoneEl.innerHTML = data.results[0].phone
-            cardEL.append(phoneEl)
+            userAboutEl.append(phoneEl)
             
             const countryEl = document.createElement('p')
             countryEl.innerHTML = data.results[0].location.country
-            cardEL.append(countryEl)
+            userAboutEl.append(countryEl)
         })
 
     </script>
