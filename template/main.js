@@ -60,5 +60,23 @@ fetch('https://jsonplaceholder.typicode.com/photos')
 			</div>
         `
         postEl[0].append(storiesEl)
+        // for (let index = 0; index < n; index++) {
+            const authorEl = document.createElement('div')
+            authorEl.classList.add('authorpostbox')
+            authorEl.innerHTML = `
+            <div class="authorpostbox">
+                        <div class="card-author">
+                            <a href="author.html">
+                            <img class="img-fluid img-thumb" src="${datas[4].url}" alt="">
+                            </a>
+                            <div class="card-block-author">
+                                <h2 class="card-title-author"><a href="post.html">${data[4].body}</a></h2>
+                                <h4 class="card-text-author">${data[4].body}</h4>
+                            </div>
+                        </div>
+                    </div>`
+
+        // }
     })
+
 })
