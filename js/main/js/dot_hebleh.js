@@ -32,37 +32,37 @@
     
 // }
 // toonii oron tooloh
-too tanih
-let num = prompt('togoogoo oruulnuu')
-let i = 0
+// too tanih
+// let num = prompt('togoogoo oruulnuu')
+// let i = 0
 
-while (i < num.length) {
+// while (i < num.length) {
 
-    switch(num[i]){
-        case '0' : console.log('tog')
-        break; 
-        case '1' : console.log('neg')
-        break; 
-        case '2' : console.log('hoyor')
-        break; 
-        case '3' : console.log('gurab')
-        break; 
-        case '4' : console.log('dorov')
-        break; 
-        case '5' : console.log('tav')
-        break; 
-        case '6' : console.log('zurgaa')
-        break; 
-        case '7' : console.log('doloo')
-        break; 
-        case '8' : console.log('naim')
-        break; 
-        case '9' : console.log('yos')
-        break; 
-    }
-    i++
+//     switch(num[i]){
+//         case '0' : console.log('tog')
+//         break; 
+//         case '1' : console.log('neg')
+//         break; 
+//         case '2' : console.log('hoyor')
+//         break; 
+//         case '3' : console.log('gurab')
+//         break; 
+//         case '4' : console.log('dorov')
+//         break; 
+//         case '5' : console.log('tav')
+//         break; 
+//         case '6' : console.log('zurgaa')
+//         break; 
+//         case '7' : console.log('doloo')
+//         break; 
+//         case '8' : console.log('naim')
+//         break; 
+//         case '9' : console.log('yos')
+//         break; 
+//     }
+//     i++
     
-}
+// }
 //  anhnii too 
 
 
